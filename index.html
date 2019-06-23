@@ -16,12 +16,10 @@
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
 body, html {
   height: 100%;
   line-height: 1.8;
 }
-
 /* Full height image header */
 .bgimg-1 {
   background-position: center;
@@ -29,7 +27,6 @@ body, html {
   background-image: url("https://cdn.vox-cdn.com/thumbor/1aFhodAxJJEoTDsly4kgCDiPElo=/0x0:2040x1360/1200x800/filters:focal(948x690:1274x1016)/cdn.vox-cdn.com/uploads/chorus_image/image/60986247/cracked-iphone-stock-1197.0.0.jpg");
   min-height: 100%;
 }
-
 .w3-top .w3-button {
   padding: 16px;
 }
@@ -43,7 +40,7 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button w3-wide"></a> 
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="http://imodspro.com/" class="w3-bar-item w3-button"><i class="fa fa-home fa fa-house"></i>HOME</a>
+      <a href="http://imodspro.com/" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="http://imodspro.com/store" class="w3-bar-item w3-button"><img src="https://cdn.discordapp.com/attachments/353766529277362188/591318506742480942/Webp.net-resizeimage.png"> STORE</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -59,6 +56,7 @@ body, html {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="http://imodspro.com/" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="http://imodspro.com/store" onclick="w3_close()" class="w3-bar-item w3-button">STORE</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
@@ -151,7 +149,7 @@ body, html {
     <div class="w3-col m6">
       <h3>Want a Customized Look?</h3>
       <p>Look no further! It's not a skin, it's your phone!</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
     </div>
     <div class="w3-col m6">
       <img class="w3-image w3-round-large" src="https://cdn.discordapp.com/attachments/353766529277362188/591114244955570186/image0.jpg" alt="Custom_Phone" width="500" height="700">
@@ -205,10 +203,8 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
-
 function w3_open() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
@@ -216,7 +212,6 @@ function w3_open() {
     mySidebar.style.display = 'block';
   }
 }
-
 // Close the sidebar with the close button
 function w3_close() {
     mySidebar.style.display = "none";
