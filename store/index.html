@@ -16,7 +16,6 @@
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
 body, html {
   height: 100%;
   line-height: 1.8;
@@ -31,6 +30,7 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button w3-wide"></a> 
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
+      <a href="http://imodspro.com/" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="http://imodspro.com/store" class="w3-bar-item w3-button"><img src="https://cdn.discordapp.com/attachments/353766529277362188/591318506742480942/Webp.net-resizeimage.png"> STORE</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -45,7 +45,8 @@ body, html {
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close Ã—</a>
+  <a href="http://imodspro.com/" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="http://imodspro.com/store" onclick="w3_close()" class="w3-bar-item w3-button">STORE</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
@@ -93,7 +94,7 @@ body, html {
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">Ã—</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
@@ -137,10 +138,8 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
-
 function w3_open() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
@@ -148,7 +147,6 @@ function w3_open() {
     mySidebar.style.display = 'block';
   }
 }
-
 // Close the sidebar with the close button
 function w3_close() {
     mySidebar.style.display = "none";
