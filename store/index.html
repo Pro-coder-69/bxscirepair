@@ -69,19 +69,19 @@ body, html {
             <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/594629426344493097/image0.jpg" alt="iPhone 6s" style=width:100%>
             <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/594629410540224523/image0.jpg" alt="iPhone 6s" style=width:100%>
   
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
         </div>
       
         <script>
             var slideIndex = 1;
-            showDivs(slideIndex);
+            showDivs1(slideIndex);
             
-            function plusDivs(n) {
-              showDivs(slideIndex += n);
+            function plusDivs1(n) {
+              showDivs1(slideIndex += n);
             }
             
-            function showDivs(n) {
+            function showDivs1(n) {
               var i;
               var x = document.getElementsByClassName("Item1");
               if (n > x.length) {slideIndex = 1}
@@ -129,19 +129,19 @@ body, html {
           <img class="Item2" src="https://cdn.discordapp.com/attachments/353766529277362188/597855764555759639/image1.jpg" alt="iPhone 6s" style=width:100%>
           <img class="Item2" src="https://cdn.discordapp.com/attachments/353766529277362188/597855765058945044/image0.jpg" alt="iPhone 6s" style=width:100%>
 
-          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10096;</button>
-          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10097;</button>
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
       </div>
     
       <script>
           var slideIndex = 1;
-          showDivs(slideIndex);
+          showDivs2(slideIndex);
           
-          function plusDivs(n) {
-            showDivs(slideIndex += n);
+          function plusDivs2(n) {
+            showDivs2(slideIndex += n);
           }
           
-          function showDivs(n) {
+          function showDivs2(n) {
             var i;
             var x = document.getElementsByClassName("Item2");
             if (n > x.length) {slideIndex = 1}
