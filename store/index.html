@@ -115,6 +115,67 @@ body, html {
       </div>
     </div>
     <!-- item 1 End -->
+
+       <!-- item 2 Start -->
+    <!--Item 2 Slideshow Start-->
+    <div class="w3-third w3-margin-bottom">
+
+      <div class="w3-content w3-display-container">
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855688714092545/image1.jpg" alt="iPhone 6s" style=width:100%>
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855765646016513/image2.jpg" alt="iPhone 6s" style=width:100%>
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855689381249025/image3.jpg" alt="iPhone 6s" style=width:100%>
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855690257727771/image0.jpg" alt="iPhone 6s" style=width:100%>
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855690878353408/image2.jpg" alt="iPhone 6s" style=width:100%>
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855764555759639/image1.jpg" alt="iPhone 6s" style=width:100%>
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855765058945044/image0.jpg" alt="iPhone 6s" style=width:100%>
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    
+      <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("Item1");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+    <!--Item 2 Slideshow End-->
+     <!--Item 2 info start-->
+    <div class="w3-container w3-light-grey">
+      <h3 class="w3-center">iPhone 6s</h3>
+      <h4 class="w3-bold w3-center">$185</h4>
+      <p class="w3-large w3-center">Rose Gold 64gb Factory Unlocked, Brand New Battery MINT (see photos)</p>
+      <p class="w3-large w3-center">CDMA+GSM</p>
+      <a href="https://www.pcmag.com/news/300986/cdma-vs-gsm-whats-the-difference"><p class="w3-text-blue w3-center" style="">Learn more about CDMA and GSM technologies</p></a>
+      <p class="w3-text-green w3-center">In stock</p>
+      <p class="w3-center">For more images or information, feel free to contact us!</p>
+    <!--Item 2 info end-->
+    
+      <!--Item 2 PayPal Button Start-->
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="w3-center">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <!--Item 2 PayPal Button End-->
+    </div>
+  </div>
+  <!-- item 2 End -->
     
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
