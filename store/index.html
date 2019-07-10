@@ -61,89 +61,34 @@ body, html {
   <div class="w3-row-padding w3-padding-5" style="padding:128px 16px" id="store">
     <h3 class="w3-center">STORE</h3>
 
-   <!-- item 1 Start -->
-    <!--Item 1 Slideshow Start-->
-    <div class="w3-third w3-margin-bottom">
-
-        <div class="w3-content w3-display-container">
-            <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/594629426344493097/image0.jpg" alt="iPhone 6s" style=width:100%>
-            <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/594629410540224523/image0.jpg" alt="iPhone 6s" style=width:100%>
-  
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
-        </div>
-      
-        <script>
-            var slideIndex = 1;
-            showDivs1(slideIndex);
-            
-            function plusDivs1(n) {
-              showDivs1(slideIndex += n);
-            }
-            
-            function showDivs1(n) {
-              var i;
-              var x = document.getElementsByClassName("Item1");
-              if (n > x.length) {slideIndex = 1}
-              if (n < 1) {slideIndex = x.length}
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-              }
-              x[slideIndex-1].style.display = "block";  
-            }
-            </script>
-      <!--Item 1 Slideshow End-->
-       <!--Item 1 info start-->
-      <div class="w3-container w3-light-grey">
-        <h3 class="w3-center">iPhone 6s</h3>
-        <h4 class="w3-bold w3-center">$170</h4>
-        <p class="w3-large w3-center">Space Grey 64gb Factory Unlocked, Brand New Battery. Running on iOS 11.3.1</p>
-        <p class="w3-large w3-center">CDMA+GSM</p>
-        <a href="https://www.pcmag.com/news/300986/cdma-vs-gsm-whats-the-difference"><p class="w3-text-blue w3-center" style="">Learn more about CDMA and GSM technologies</p></a>
-        <p class="w3-text-green w3-center">In stock</p>
-        <p class="w3-center">For more images or information, feel free to contact us!</p>
-      <!--Item 1 info end-->
-
-        <!--Item 1 PayPal Button Start-->
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="w3-center">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-          </form>
-        <!--Item 1 PayPal Button End-->
-      </div>
-    </div>
-    <!-- item 1 End -->
-
        <!-- item 2 Start -->
     <!--Item 2 Slideshow Start-->
     <div class="w3-third w3-margin-bottom">
 
       <div class="w3-content w3-display-container">
-          <img class="Item2" src="https://cdn.discordapp.com/attachments/353766529277362188/597855688714092545/image1.jpg" alt="iPhone 6s" style=width:100%>
-          <img class="Item2" src="https://cdn.discordapp.com/attachments/353766529277362188/597855765646016513/image2.jpg" alt="iPhone 6s" style=width:100%>
-          <img class="Item2" src="https://cdn.discordapp.com/attachments/353766529277362188/597855689381249025/image3.jpg" alt="iPhone 6s" style=width:100%>
-          <img class="Item2" src="https://cdn.discordapp.com/attachments/353766529277362188/597855690257727771/image0.jpg" alt="iPhone 6s" style=width:100%>
-          <img class="Item2" src="https://cdn.discordapp.com/attachments/353766529277362188/597855690878353408/image2.jpg" alt="iPhone 6s" style=width:100%>
-          <img class="Item2" src="https://cdn.discordapp.com/attachments/353766529277362188/597855764555759639/image1.jpg" alt="iPhone 6s" style=width:100%>
-          <img class="Item2" src="https://cdn.discordapp.com/attachments/353766529277362188/597855765058945044/image0.jpg" alt="iPhone 6s" style=width:100%>
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855688714092545/image1.jpg" alt="iPhone 6s" style=width:100%>
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855765646016513/image2.jpg" alt="iPhone 6s" style=width:100%>
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855689381249025/image3.jpg" alt="iPhone 6s" style=width:100%>
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855690257727771/image0.jpg" alt="iPhone 6s" style=width:100%>
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855690878353408/image2.jpg" alt="iPhone 6s" style=width:100%>
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855764555759639/image1.jpg" alt="iPhone 6s" style=width:100%>
+          <img class="Item1" src="https://cdn.discordapp.com/attachments/353766529277362188/597855765058945044/image0.jpg" alt="iPhone 6s" style=width:100%>
 
-          <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
-          <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
       </div>
     
       <script>
           var slideIndex = 1;
-          showDivs2(slideIndex);
+          showDivs1(slideIndex);
           
-          function plusDivs2(n) {
-            showDivs2(slideIndex += n);
+          function plusDivs1(n) {
+            showDivs1(slideIndex += n);
           }
           
-          function showDivs2(n) {
+          function showDivs1(n) {
             var i;
-            var x = document.getElementsByClassName("Item2");
+            var x = document.getElementsByClassName("Item1");
             if (n > x.length) {slideIndex = 1}
             if (n < 1) {slideIndex = x.length}
             for (i = 0; i < x.length; i++) {
